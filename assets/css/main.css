@@ -1,0 +1,196 @@
+@font-face {
+    font-family: 'Abel';
+    font-style: normal;
+    font-weight: 400;
+    font-display: block;
+    src: url(https://design.penpot.app/internal/gfonts/font/abel/v18/MwQ5bhbm2POE2V9BPQ.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+body {
+    margin: 0;
+    background: rgb(255, 255, 255);
+    font-family: 'Abel';
+    font-style: normal;
+    font-weight: 400;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+header {
+    background: rgb(204, 204, 204);
+}
+
+header .container {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.logo {
+    padding: 5px 0px;
+    width: 1vw;
+    margin-right: 20px; /* space between logo and nav */
+}
+
+/* Navigation Styling */
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between; /* Makes sure the navs are on opposite sides */
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center; /* Align items vertically */
+    padding: 0;
+    margin: 0;
+}
+
+nav ul.left-nav {
+    list-style: none;
+    display: flex;
+    align-items: center; /* Aligns all items vertically */
+    padding: 0;
+    margin: 0;
+}
+
+
+nav ul.left-nav li {
+    margin-left: 30px; /* Original margin */
+}
+
+nav ul.left-nav li:nth-child(5) { /* The list item containing the search-container */
+    margin-left: 5px; /* Reduce the margin-left to bring it closer to the "Weather in" text */
+}
+
+nav li {
+    margin-left: 20px;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20px; /* Ensure the text size is consistent */
+}
+
+
+.search-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.search-container input[type="text"] {
+    font-family: 'Abel'; /* Use the same font as the navigation */
+    font-style: normal;
+    font-size: 20px; /* Match the font size of the navigation links */
+    border: 1px solid #ccc;
+    background: #FFF59D;
+    border-radius: 20px; /* Make input round */
+    margin: 10px;
+    padding: 10px 15px;
+    outline: none;
+    height: 20px; /* Adjusted height for better alignment */
+    width: 120px; /* Width of the input */
+    transition: width 0.4s ease-in-out;
+    text-transform: uppercase; /* Capitalize the text */
+}
+
+.search-container input[type="text"]:focus {
+    width: 200px; /* Increase width when focused */
+}
+
+.search-container button[type="submit"] {
+    position: absolute;
+    right: 5px; /* Move closer by reducing the value (e.g., 3px, 2px) */
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    background: #ffffff;
+    color: white;
+    border-radius: 50%;
+    width: 40px; /* Ensuring the button is the same height as the input */
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin-left: 10px;
+    padding: 0;
+}
+
+.search-container button[type="submit"] img {
+    width: 20px; /* Size of the looper image */
+    height: 20px;
+}
+/* Right Navigation */
+nav ul.right-nav {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    align-items: center; /* Aligns the items vertically with the left navigation */
+    margin-left: auto; /* Pushes the right nav to the far right */
+}
+
+nav ul.right-nav li {
+    margin-left: 15px;
+}
+
+/* Separator styling */
+nav ul.right-nav li.separator {
+    margin-left: 5px; /* Less margin for the separator */
+    margin-right: 5px; /* Less margin for the separator */
+    color: black; /* Color of the separator */
+    font-weight: bold; /* Bold for visibility */
+}
+
+/* Right Nav links styling */
+nav ul.right-nav a {
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    border-radius: 15px;
+    transition: background-color 0.3s ease, color 0.3s ease, width 0.3s ease, padding 0.3s ease;
+    display: inline-block;
+    min-width: 50px; /* Ensure buttons have a minimum width */
+    text-align: center; /* Center text inside the button */
+}
+
+/* Hover effect for the Login button */
+nav ul.right-nav li:nth-child(1) a:hover {
+    background-color: black;
+    color: white; 
+    padding: 10px 20px; /* Increase padding for a wider button on hover */
+}
+
+/* Hover effect for the Sign-Up button */
+nav ul.right-nav li:nth-child(3) a:hover {
+    background-color: #6bb4c2; /* Pastel blue */
+    color: white;
+    padding: 10px 20px; /* Increase padding for a wider button on hover */
+}
+
+/* Add rounded corners to the Login button on hover */
+nav ul.right-nav li:nth-child(1) a:hover {
+    border-radius: 15px; /* Apply rounded corners */
+}
+
+/* Add rounded corners to the Sign-Up button on hover */
+nav ul.right-nav li:nth-child(3) a:hover {
+    border-radius: 15px; /* Apply rounded corners */
+}
+
+/* Adjust margin for the Sign-Up button */
+nav ul.right-nav li:nth-child(3) {
+    margin-left: 2px; /* Reduce margin to move the Sign-Up button to the left */
+}
