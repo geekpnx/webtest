@@ -32,8 +32,8 @@ header .container {
 }
 
 .logo {
-    padding: 5px 0px;
-    width: 2vw;
+    padding: 10px 0px;
+    width: 1.5vw;
     margin-right: 20px; /* space between logo and nav */
 }
 
@@ -96,16 +96,16 @@ nav a {
     background: #FFF59D;
     border-radius: 20px; /* Make input round */
     margin: 10px;
-    padding: 10px 15px;
+    padding: 5px 15px;
     outline: none;
     height: 20px; /* Adjusted height for better alignment */
-    width: 120px; /* Width of the input */
+    width: 90px; /* Width of the input */
     transition: width 0.4s ease-in-out;
     text-transform: uppercase; /* Capitalize the text */
 }
 
 .search-container input[type="text"]:focus {
-    width: 200px; /* Increase width when focused */
+    width: 150px; /* Increase width when focused */
 }
 
 .search-container button[type="submit"] {
@@ -117,8 +117,8 @@ nav a {
     background: #ffffff;
     color: white;
     border-radius: 50%;
-    width: 40px; /* Ensuring the button is the same height as the input */
-    height: 40px;
+    width: 30px; /* Ensuring the button is the same height as the input */
+    height: 30px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -158,7 +158,7 @@ nav ul.right-nav a {
     color: black;
     text-decoration: none;
     text-transform: uppercase;
-    padding: 10px 20px;
+    padding: 5px 15px;
     border-radius: 15px;
     transition: background-color 0.3s ease, color 0.3s ease, width 0.3s ease, padding 0.3s ease;
     display: inline-block;
@@ -170,14 +170,14 @@ nav ul.right-nav a {
 nav ul.right-nav li:nth-child(1) a:hover {
     background-color: black;
     color: white; 
-    padding: 10px 20px; /* Increase padding for a wider button on hover */
+    padding: 5px 15px; /* Increase padding for a wider button on hover */
 }
 
 /* Hover effect for the Sign-Up button */
 nav ul.right-nav li:nth-child(3) a:hover {
     background-color: #6bb4c2; /* Pastel blue */
     color: white;
-    padding: 10px 20px; /* Increase padding for a wider button on hover */
+    padding: 5px 15px; /* Increase padding for a wider button on hover */
 }
 
 /* Add rounded corners to the Login button on hover */
